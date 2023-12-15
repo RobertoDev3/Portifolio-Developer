@@ -27,38 +27,39 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
         <div class="nav">
-            <a href="#">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Skills</a>
-            <a href="#">Portifolio</a>
-            <a href="#">Contato</a>
+            <a href="#about">Sobre</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Portifolio</a>
+            <a href="#contact">Contato</a>
             <iconify-icon class="nav-icon" icon="mingcute:sun-line"></iconify-icon>
         </div>
     </nav>
     <main>
-        <header>
+        <header id="home">
             <div class="header-info">
                 <div class="header-info__width">
                     <h1>Olá! Eu sou o Roberto</h1>
                     <span>Desenvolvedor Front-end</span>
                 </div>
                 <div>
-                    <iconify-icon class="header-info-icons" icon="bi:github"></iconify-icon>
-                    <iconify-icon class="header-info-icons" icon="bi:linkedin"></iconify-icon>
-                    <iconify-icon class="header-info-icons" icon="bi:instagram"></iconify-icon>
+                    <a href="https://github.com/RobertoDev3/" target="_blank">
+                        <iconify-icon class="header-info-icons" icon="bi:github"></iconify-icon></a>
+                    <a href="https://www.linkedin.com/in/robertotda/" target="_blank">
+                        <iconify-icon class="header-info-icons" icon="bi:linkedin"></iconify-icon></a>
+                    <a href="https://www.instagram.com/robertotda/" target="_blank">
+                        <iconify-icon class="header-info-icons" icon="bi:instagram"></iconify-icon></a>
                 </div>
-                <button class="btn-whatsapp">
+                <a class="btn-whatsapp" href="https://wa.me/11976263180" target="_blank">
                     <iconify-icon class="btn-whatsapp-icon" icon="bi:whatsapp"></iconify-icon>
-                    Vamos conversar
-                </button>
+                    Vamos conversar</a>
             </div>
             <div>
                 <img src="assets/images/Perfil.jpg" alt="Foto do Roberto com efeito estilizado">
             </div>
         </header>
-        <section class="about">
+        <section id="about" class="about">
             <h2>Sobre Mim</h2>
             <p>
                 Sou um Desenvolvedor Web dedicado, constantemente em busca de oportunidades para expandir meu repertório
@@ -70,34 +71,222 @@
                 desafio como uma chance de superação, e estou sempre pronto para enfrentar obstáculos de frente!
             </p>
         </section>
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2>Tecnologias e Habilidades</h2>
             <span>Conhementos em...</span>
             <div class="skills-icons">
-                <iconify-icon icon="fa6-brands:html5"></iconify-icon>
-                <iconify-icon icon="fa6-brands:css3-alt"></iconify-icon>
-                <iconify-icon icon="fa6-brands:js"></iconify-icon>
-                <iconify-icon icon="fa6-brands:bootstrap"></iconify-icon>
-                <iconify-icon icon="fa6-brands:git-alt"></iconify-icon>
-                <iconify-icon icon="fa6-brands:github"></iconify-icon>
+                <div class="skills-icon">
+                    <span class="tooltip">Html</span>
+                    <iconify-icon icon="fa6-brands:html5"></iconify-icon>
+                </div>
+                <div class="skills-icon">
+                    <span class="tooltip">Css3</span>
+                    <iconify-icon icon="fa6-brands:css3-alt"></iconify-icon>
+                </div>
+                <div class="skills-icon">
+                    <span class="tooltip">JavaScript</span>
+                    <iconify-icon icon="fa6-brands:js"></iconify-icon>
+                </div>
+                <div class="skills-icon">
+                    <span class="tooltip">bootstrap</span>
+                    <iconify-icon icon="fa6-brands:bootstrap"></iconify-icon>
+                </div>
+                <div class="skills-icon">
+                    <span class="tooltip">Git</span>
+                    <iconify-icon icon="fa6-brands:git-alt"></iconify-icon>
+                </div>
+                <div class="skills-icon">
+                    <span class="tooltip">GitHub</span>
+                    <iconify-icon icon="fa6-brands:github"></iconify-icon>
+                </div>
             </div>
             <span>Estudando...</span>
             <div class="skills-icons">
-                <iconify-icon icon="fa6-brands:react"></iconify-icon>
-                <iconify-icon icon="fa6-brands:node-js"></iconify-icon>
-                <iconify-icon icon="cib:firebase"></iconify-icon>
+                <div class="skills-icon">
+                    <span class="tooltip">React</span>
+                    <iconify-icon icon="fa6-brands:react"></iconify-icon>
+                </div>
+                <div class="skills-icon">
+                    <span class="tooltip">NodeJs</span>
+                    <iconify-icon icon="fa6-brands:node-js"></iconify-icon>
+                </div>
+                <div class="skills-icon">
+                    <span class="tooltip">Firebase</span>
+                    <iconify-icon icon="cib:firebase"></iconify-icon>
+                </div>
             </div>
         </section>
-        <section>
-            Portifolio
+        <section id="project" class="project">
+            <iconify-icon class="project-arrow" icon="formkit:arrowright"></iconify-icon>
+            <h2>Projetos</h2>
+            <div class="card-flex">
+                <div class="card">
+                    <div class="card-top">
+                        <img class="card-img" src="" alt="">
+                    </div>
+                    <div class="card-inner">
+                        <span class="card-inner-title">Titulo</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus nihil hic ex minus
+                            quis molestiae voluptatem, consectetur quidem reprehenderit illo amet atque quas ipsam
+                            labore perspiciatis doloremque architecto suscipit!</p>
+                        <p>Html, Css, Javascript, Bootstrap</p>
+                        <div class="card-inner-links">
+                            <div class="card-inner-link">
+                                <iconify-icon icon="ph:link-bold"></iconify-icon>
+                                <a href="#">Teste o Projeto</a>
+                            </div>
+                            <div class="card-inner-link">
+                                <iconify-icon icon="fa6-brands:github"></iconify-icon>
+                                <a href="#">Veja o Codigo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img class="card-img" src="" alt="">
+                    </div>
+                    <div class="card-inner">
+                        <span class="card-inner-title">Titulo</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus nihil hic ex minus
+                            quis molestiae voluptatem, consectetur quidem reprehenderit illo amet atque quas ipsam
+                            labore perspiciatis doloremque architecto suscipit!</p>
+                        <p>Html, Css, Javascript, Bootstrap</p>
+                        <div class="card-inner-links">
+                            <div class="card-inner-link">
+                                <iconify-icon icon="ph:link-bold"></iconify-icon>
+                                <a href="#">Teste o Projeto</a>
+                            </div>
+                            <div class="card-inner-link">
+                                <iconify-icon icon="fa6-brands:github"></iconify-icon>
+                                <a href="#">Veja o Codigo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img class="card-img" src="" alt="">
+                    </div>
+                    <div class="card-inner">
+                        <span class="card-inner-title">Titulo</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus nihil hic ex minus
+                            quis molestiae voluptatem, consectetur quidem reprehenderit illo amet atque quas ipsam
+                            labore perspiciatis doloremque architecto suscipit!</p>
+                        <p>Html, Css, Javascript, Bootstrap</p>
+                        <div class="card-inner-links">
+                            <div class="card-inner-link">
+                                <iconify-icon icon="ph:link-bold"></iconify-icon>
+                                <a href="#">Teste o Projeto</a>
+                            </div>
+                            <div class="card-inner-link">
+                                <iconify-icon icon="fa6-brands:github"></iconify-icon>
+                                <a href="#">Veja o Codigo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img class="card-img" src="" alt="">
+                    </div>
+                    <div class="card-inner">
+                        <span class="card-inner-title">Titulo</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus nihil hic ex minus
+                            quis molestiae voluptatem, consectetur quidem reprehenderit illo amet atque quas ipsam
+                            labore perspiciatis doloremque architecto suscipit!</p>
+                        <p>Html, Css, Javascript, Bootstrap</p>
+                        <div class="card-inner-links">
+                            <div class="card-inner-link">
+                                <iconify-icon icon="ph:link-bold"></iconify-icon>
+                                <a href="#">Teste o Projeto</a>
+                            </div>
+                            <div class="card-inner-link">
+                                <iconify-icon icon="fa6-brands:github"></iconify-icon>
+                                <a href="#">Veja o Codigo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img class="card-img" src="" alt="">
+                    </div>
+                    <div class="card-inner">
+                        <span class="card-inner-title">Titulo</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus nihil hic ex minus
+                            quis molestiae voluptatem, consectetur quidem reprehenderit illo amet atque quas ipsam
+                            labore perspiciatis doloremque architecto suscipit!</p>
+                        <p>Html, Css, Javascript, Bootstrap</p>
+                        <div class="card-inner-links">
+                            <div class="card-inner-link">
+                                <iconify-icon icon="ph:link-bold"></iconify-icon>
+                                <a href="#">Teste o Projeto</a>
+                            </div>
+                            <div class="card-inner-link">
+                                <iconify-icon icon="fa6-brands:github"></iconify-icon>
+                                <a href="#">Veja o Codigo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img class="card-img" src="" alt="">
+                    </div>
+                    <div class="card-inner">
+                        <span class="card-inner-title">Titulo</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat delectus nihil hic ex minus
+                            quis molestiae voluptatem, consectetur quidem reprehenderit illo amet atque quas ipsam
+                            labore perspiciatis doloremque architecto suscipit!</p>
+                        <p>Html, Css, Javascript, Bootstrap</p>
+                        <div class="card-inner-links">
+                            <div class="card-inner-link">
+                                <iconify-icon icon="ph:link-bold"></iconify-icon>
+                                <a href="#">Teste o Projeto</a>
+                            </div>
+                            <div class="card-inner-link">
+                                <iconify-icon icon="fa6-brands:github"></iconify-icon>
+                                <a href="#">Veja o Codigo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            Contato
+        <section id="contact" class="contact">
+            <h2>Contato</h2>
+            <div class="contact-inner">
+                <a class="btn-whatsapp" href="https://wa.me/11976263180" target="_blank">
+                    <iconify-icon class="btn-whatsapp-icon" icon="bi:whatsapp"></iconify-icon>
+                    Vamos conversar</a>
+                <div class="contact-inner-info">
+                    <div class="contact-inner-email">
+                        <iconify-icon icon="ic:outline-email"></iconify-icon>
+                        <span class="email">E-mail:</span>
+                    </div>
+                    <span>roberto.dev3@hotmai.com</span>
+                    <iconify-icon icon="iconamoon:copy"></iconify-icon>
+                </div>
+            </div>
+            <a class="voltar-topo" href="#nav">
+                <iconify-icon icon="formkit:arrowup"></iconify-icon>
+                Voltar ao topo
+                <iconify-icon icon="formkit:arrowup"></iconify-icon>
+            </a>
         </section>
-        <footer>
-            Rodapé
-        </footer>
     </main>
+    <footer>
+        <span>Copyright &copy; Roberto Teixeira · 2023</span>
+        <div>
+            <a href="https://github.com/RobertoDev3/" target="_blank">
+                <iconify-icon class="header-info-icons" icon="bi:github"></iconify-icon></a>
+            <a href="https://www.linkedin.com/in/robertotda/" target="_blank">
+                <iconify-icon class="header-info-icons" icon="bi:linkedin"></iconify-icon></a>
+            <a href="https://www.instagram.com/robertotda/" target="_blank">
+                <iconify-icon class="header-info-icons" icon="bi:instagram"></iconify-icon></a>
+        </div>
+    </footer>
 </body>
 
 </html>
