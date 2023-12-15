@@ -2,6 +2,7 @@
     --bg-dark: rgba(33, 34, 44);
     --bg-light-dark: rgba(40, 42, 54);
     --white: rgb(241, 234, 234);
+    --black: rgb(0, 0, 0);
     --gray: rgba(255, 255, 255, 0.5);
     --primary-color: rgb(127, 195, 214);
 }
@@ -20,7 +21,7 @@ body {
 }
 
 main {
-    width: 80dvw;
+    width: 70dvw;
     margin: 0 auto;
 }
 
@@ -33,7 +34,7 @@ nav {
 }
 
 .nav {
-    width: 80dvw;
+    width: 70dvw;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -137,7 +138,7 @@ p {
     font-size: 18px;
     background-color: var(--primary-color);
     border-radius: 8px;
-    color: black;
+    color: var(--black);
     padding: 8px;
     margin: 20px 10px 20px 0;
     transition: transform .2s linear;
@@ -154,7 +155,7 @@ p {
 
 .btn-whatsapp:hover,
 .btn-whatsapp:hover .btn-whatsapp-icon {
-    color: black !important;
+    color: var(--black) !important;
 }
 
 .btn-whatsapp-icon {
@@ -230,7 +231,7 @@ p {
     z-index: 3;
     top: -35px;
     background-color: var(--primary-color);
-    color: black;
+    color: var(--black);
     padding: 6px;
     border-radius: 8px;
     opacity: 0;
@@ -349,13 +350,26 @@ p {
     color: var(--primary-color);
 }
 
+.section-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60dvh;
+}
+
 .contact {
-    position: relative;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    padding: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 50dvh;
+    box-shadow: inset 0px 0px 12px 1px rgba(0,0,0,0.5);
+}
+
+.contact h2 {
+    margin: 0;
     margin-bottom: 30px;
 }
 
@@ -409,7 +423,7 @@ p {
     gap: 5px;
     text-decoration: none;
     position: absolute;
-    bottom: 0px;
+    top: -40px;
 }
 
 .voltar-topo, .voltar-topo iconify-icon {
@@ -430,13 +444,14 @@ footer {
 }
 
 footer span {
+    font-size: 12px;
     position: absolute;
     left: 50px;
     bottom: 50%;
     transform: translateY(50%);
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 899px) {
     header {
         flex-direction: column-reverse;
     }
@@ -479,8 +494,13 @@ footer span {
         font-size: 20px;
     }
 
+    .section-contact {
+        height: 100%;
+    }
+
     .contact {
-        height: 50dvh;
+        margin: 50px 0 70px 0;
+        width: 100%;
     }
 
     .contact-inner {
@@ -488,6 +508,7 @@ footer span {
     }
 
     footer {
+        padding-bottom: 10px;
         flex-direction: column-reverse;
     }
 
