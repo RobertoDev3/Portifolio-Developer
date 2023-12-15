@@ -11,7 +11,9 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Roboto+Slab:wght@100;200;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Roboto+Slab:wght@100;200;400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
 
     <!-- Iconify Design -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
@@ -25,23 +27,66 @@
 </head>
 
 <body>
-    <main>
-        <nav>
+    <nav>
+        <div class="nav">
             <a href="#">Home</a>
             <a href="#">Sobre</a>
             <a href="#">Skills</a>
             <a href="#">Portifolio</a>
             <a href="#">Contato</a>
             <iconify-icon class="nav-icon" icon="mingcute:sun-line"></iconify-icon>
-        </nav>
+        </div>
+    </nav>
+    <main>
         <header>
-            Cabeçalho
+            <div class="header-info">
+                <div class="header-info__width">
+                    <h1>Olá! Eu sou o Roberto</h1>
+                    <span>Desenvolvedor Front-end</span>
+                </div>
+                <div>
+                    <iconify-icon class="header-info-icons" icon="bi:github"></iconify-icon>
+                    <iconify-icon class="header-info-icons" icon="bi:linkedin"></iconify-icon>
+                    <iconify-icon class="header-info-icons" icon="bi:instagram"></iconify-icon>
+                </div>
+                <button class="btn-whatsapp">
+                    <iconify-icon class="btn-whatsapp-icon" icon="bi:whatsapp"></iconify-icon>
+                    Vamos conversar
+                </button>
+            </div>
+            <div>
+                <img src="assets/images/Perfil.jpg" alt="Foto do Roberto com efeito estilizado">
+            </div>
         </header>
-        <section>
-            Sobre mim
+        <section class="about">
+            <h2>Sobre Mim</h2>
+            <p>
+                Sou um Desenvolvedor Web dedicado, constantemente em busca de oportunidades para expandir meu repertório
+                de linguagens e aprimorar minhas habilidades.
+            </p>
+            <p>
+                Estou firmemente comprometido com a ideia de aprendizado contínuo, o que me permite adotar novas
+                linguagens com agilidade e me ajustar com facilidade a quaisquer mudanças que se apresentem. Encaro cada
+                desafio como uma chance de superação, e estou sempre pronto para enfrentar obstáculos de frente!
+            </p>
         </section>
-        <section>
-            Tecnologias e Habilidades
+        <section class="skills">
+            <h2>Tecnologias e Habilidades</h2>
+            <span>Conhementos em...</span>
+            <div class="skills-icons">
+                <iconify-icon icon="fa6-brands:html5"></iconify-icon>
+                <iconify-icon icon="fa6-brands:css3-alt"></iconify-icon>
+                <iconify-icon icon="fa6-brands:js"></iconify-icon>
+                <iconify-icon icon="fa6-brands:bootstrap"></iconify-icon>
+                <iconify-icon icon="fa6-brands:git-alt"></iconify-icon>
+                <iconify-icon icon="fa6-brands:github"></iconify-icon>
+            </div>
+            <span>Estudando...</span>
+            <div class="skills-icons">
+                <iconify-icon icon="fa6-brands:react"></iconify-icon>
+                <iconify-icon icon="fa6-brands:node-js"></iconify-icon>
+                <iconify-icon icon="cib:firebase"></iconify-icon>
+            </div>
         </section>
         <section>
             Portifolio
