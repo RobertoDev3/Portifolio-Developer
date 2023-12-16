@@ -463,7 +463,7 @@ footer span {
 
     .card {
         scroll-snap-align: start;
-        min-width: 300px;
+        min-width: 263px;
         box-shadow: none;
     }
 
