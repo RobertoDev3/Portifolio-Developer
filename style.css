@@ -7,6 +7,18 @@
   --primary-color: rgb(127, 195, 214);
 }
 
+html ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: var(--primary-color);
+}
+html ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
