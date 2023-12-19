@@ -18,6 +18,11 @@
     <!-- Iconify Design -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 
+    <script
+      defer
+      src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+    ></script>
+
     <!-- Logica do site -->
     <script defer src="logic.js"></script>
 
@@ -34,23 +39,28 @@
         <a href="#about"><iconify-icon icon="fa-solid:user"></iconify-icon></a>
         <a href="#skills"><iconify-icon icon="mdi:brain"></iconify-icon></a>
         <a href="#project"
-          ><iconify-icon icon="material-symbols:web"></iconify-icon
+          ><iconify-icon icon="lucide:code-2"></iconify-icon
         ></a>
         <a href="#contact"
           ><iconify-icon icon="ic:outline-email"></iconify-icon
         ></a>
       </div>
-      <div class="nav-mobile" id="menu-icon">
-        <iconify-icon icon="ion:menu"></iconify-icon>
-        <div class="nav-mobile-inner">
-          <a href="#">Sobre</a>
-          <a href="#">Habilidades</a>
-          <a href="#">Pojetos</a>
-          <a href="">Contato</a>
+      <div class="nav-mobile">
+        <iconify-icon
+          onclick="openNavbar()"
+          id="nav-mobile-icon"
+          icon="ion:menu"
+        ></iconify-icon>
+        <div class="nav-mobile-inner" id="nav-mobile-inner">
+          <a href="#about">Sobre</a>
+          <a href="#skills">Habilidades</a>
+          <a href="#project">Projetos</a>
+          <a href="#contact">Contato</a>
         </div>
       </div>
     </nav>
     <main>
+      <div id="particles-container"></div>
       <header id="home">
         <div class="header-info">
           <div class="header-info__width">
