@@ -32,7 +32,7 @@
 
   <body>
     <nav>
-      <div class="nav-desktop">
+      <div id="nav-desktop" class="nav-desktop hidden-nav">
         <div class="nav-desktop-buttons">
           <span class="nav-desktop-tooltips">Home</span>
           <a href="#home"
@@ -77,8 +77,8 @@
       </div>
     </nav>
     <main>
-      <div id="particles-container"></div>
-      <header id="home">
+      <div id="particles-container" class="hidden"></div>
+      <header id="home" class="hidden">
         <div class="header-info">
           <div class="header-info__width">
             <h1>Olá! Eu sou o Roberto</h1>
@@ -123,7 +123,7 @@
           />
         </div>
       </header>
-      <section id="about" class="about">
+      <section id="about" class="about hidden">
         <h2>Sobre Mim</h2>
         <p>
           Sou um Desenvolvedor Web dedicado, constantemente em busca de
@@ -138,7 +138,7 @@
           obstáculos de frente!
         </p>
       </section>
-      <section id="skills" class="skills">
+      <section id="skills" class="skills hidden">
         <h2>Tecnologias e Habilidades</h2>
         <span>Conhementos em...</span>
         <div class="skills-icons">
@@ -183,7 +183,7 @@
           </div>
         </div>
       </section>
-      <section id="project" class="project">
+      <section id="project" class="project hidden">
         <iconify-icon
           class="project-arrow"
           icon="formkit:arrowright"
@@ -377,7 +377,7 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="section-contact">
+      <section id="contact" class="section-contact hidden">
         <div class="contact">
           <h2>Contato</h2>
           <div class="contact-inner">
@@ -404,7 +404,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="hidden-footer">
       <a class="voltar-topo" href="#home">
         <iconify-icon icon="formkit:arrowup"></iconify-icon>
         Voltar ao topo

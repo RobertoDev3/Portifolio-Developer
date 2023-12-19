@@ -1,3 +1,31 @@
+const myObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+const elements = document.querySelectorAll(".hidden");
+
+elements.forEach((element) => {
+  myObserver.observe(element);
+});
+
+const myObserverFooter = new IntersectionObserver((entry) => {
+  if (entry[0].isIntersecting) {
+    entry[0].target.classList.add("show-footer");
+  }
+});
+
+const footer = document.querySelector(".hidden-footer");
+
+myObserverFooter.observe(footer);
+
+const navDesktop = document
+  .getElementById("nav-desktop")
+  .classList.add("show-nav");
+
 let homeHeight = document.getElementById("home").offsetHeight;
 document.getElementById("particles-container").style.height = homeHeight + "px";
 
@@ -56,7 +84,7 @@ particlesJS("particles-container", {
   },
   retina_detect: true,
 });
-var count_particles, stats, update;
+let count_particles, stats, update;
 stats = new Stats();
 stats.setMode(0);
 stats.domElement.style.position = "absolute";

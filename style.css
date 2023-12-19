@@ -7,6 +7,48 @@
   --primary-color: rgb(127, 195, 214);
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.hidden-footer {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateY(100%);
+  transition: all 1s;
+}
+
+.show-footer {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transition: all 1s;
+}
+
+.hidden-nav {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateY(-50%) translateX(200%);
+  transition: all 1s;
+}
+
+.show-nav {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(-50%) translateX(0);
+  transition: all 1s;
+}
+
 html ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -42,7 +84,6 @@ main {
   z-index: 10;
   right: 2%;
   top: 50%;
-  transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
