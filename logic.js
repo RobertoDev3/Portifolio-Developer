@@ -1,10 +1,17 @@
-const myObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
-  });
-});
+const myObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  },
+  {
+    threshold: 0.07,
+  }
+);
 
 const elements = document.querySelectorAll(".hidden");
 
@@ -15,6 +22,8 @@ elements.forEach((element) => {
 const myObserverFooter = new IntersectionObserver((entry) => {
   if (entry[0].isIntersecting) {
     entry[0].target.classList.add("show-footer");
+  } else {
+    entry[0].target.classList.remove("show-footer");
   }
 });
 
@@ -22,12 +31,36 @@ const footer = document.querySelector(".hidden-footer");
 
 myObserverFooter.observe(footer);
 
-const navDesktop = document
+const navDesktopShow = document
   .getElementById("nav-desktop")
   .classList.add("show-nav");
 
-let homeHeight = document.getElementById("home").offsetHeight;
-document.getElementById("particles-container").style.height = homeHeight + "px";
+function verificarTamanhoPagina() {
+  const cardMobileRemoveHidden = document.querySelectorAll(".card");
+  cardMobileRemoveHidden.forEach((e) => {
+    if (window.innerWidth < 899) {
+      e.classList.remove("hidden");
+    } else {
+      e.classList.add("hidden");
+    }
+  });
+}
+
+window.addEventListener("load", verificarTamanhoPagina);
+window.addEventListener("resize", verificarTamanhoPagina);
+
+const emailButton = document.getElementById("email-button");
+
+emailButton.addEventListener("click", () => {
+  const email = document.getElementById("email-text").value;
+
+  if (!navigator.clipboard) {
+    alert("A funcionalidade de cópia não é suportada neste navegador.");
+    return;
+  }
+
+  navigator.clipboard.writeText(email);
+});
 
 particlesJS("particles-container", {
   particles: {

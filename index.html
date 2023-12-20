@@ -77,7 +77,7 @@
       </div>
     </nav>
     <main>
-      <div id="particles-container" class="hidden"></div>
+      <div id="particles-container" class=""></div>
       <header id="home" class="hidden">
         <div class="header-info">
           <div class="header-info__width">
@@ -185,12 +185,12 @@
       </section>
       <section id="project" class="project hidden">
         <iconify-icon
-          class="project-arrow"
-          icon="formkit:arrowright"
+          class="project-hand"
+          icon="icon-park-outline:hand-up"
         ></iconify-icon>
         <h2>Projetos</h2>
         <div class="card-flex">
-          <div class="card">
+          <div class="card hidden">
             <div class="card-top">
               <img
                 class="card-img"
@@ -226,7 +226,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card hidden">
             <div class="card-top">
               <img
                 class="card-img"
@@ -258,7 +258,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card hidden">
             <div class="card-top">
               <img
                 class="card-img"
@@ -294,7 +294,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card hidden">
             <div class="card-top">
               <img
                 class="card-img"
@@ -321,7 +321,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card hidden">
             <div class="card-top">
               <img
                 class="card-img"
@@ -348,7 +348,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card hidden">
             <div class="card-top">
               <img
                 class="card-img"
@@ -397,8 +397,17 @@
                 <iconify-icon icon="ic:outline-email"></iconify-icon>
                 <span class="email">E-mail:</span>
               </div>
-              <span>roberto.dev3@hotmai.com</span>
-              <iconify-icon icon="iconamoon:copy"></iconify-icon>
+              <input
+                type="text"
+                id="email-text"
+                class="email-text"
+                value="roberto.dev3@hotmai.com"
+                disabled
+              />
+              <iconify-icon
+                id="email-button"
+                icon="iconamoon:copy"
+              ></iconify-icon>
             </div>
           </div>
         </div>
