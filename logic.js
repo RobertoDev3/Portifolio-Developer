@@ -31,9 +31,11 @@ const footer = document.querySelector(".hidden-footer");
 
 myObserverFooter.observe(footer);
 
-const navDesktopShow = document
-  .getElementById("nav-desktop")
-  .classList.add("show-nav");
+function navDesktopShow() {
+  document.getElementById("nav-desktop").classList.add("show-nav");
+}
+
+window.addEventListener("load", navDesktopShow);
 
 function verificarTamanhoPagina() {
   const cardMobileRemoveHidden = document.querySelectorAll(".card");
