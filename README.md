@@ -1,3 +1,19 @@
-⚠️ PROJETO EM OBRA ⚠️
+# Portifolio Developer
 
-![EM OBRA](https://github.com/RobertoDev3/Cadastro-de-Clientes/assets/127002141/9da459b7-bf1f-488f-9f3a-fb7f61d75b8b)
+Desenvolvi este projeto com o objetivo de criar uma landing page para meu portfólio pessoal, com o propósito de destacar algumas das minhas habilidades e competências.
+
+## Layout
+
+<img src="assets/layout.jpg" />
+
+## Funcionalidades
+
+- Responsivo
+- Animações ao dar scroll
+- Fundo interativo
+
+## _Tecnologias_
+
+> Html / Css / JavaScript
+
+[⭐ Acesse a pagina clicando aqui ⭐](https://www.robertodev3.com.br)
