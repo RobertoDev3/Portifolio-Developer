@@ -574,6 +574,7 @@ p {
 .contact-inner-info .email {
   font-weight: 600;
   color: var(--primary-color);
+  margin-top: 0;
 }
 
 .email-text {
